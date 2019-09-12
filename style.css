@@ -1,0 +1,107 @@
+body {
+	font-family: Nunito,sans-serif;
+	background: #ccc;
+	margin:0;
+	padding:0;
+}
+
+header {
+	height: 60px;
+	background: #3490dc;
+}
+
+header a {
+	font-size: 2em;
+	color:#fff;
+	margin:10px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav {
+	background: #555;
+	text-align: center;
+	padding: 2px 0;
+}
+
+nav a {
+	display: inline-block;
+	padding: 0 10px;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+main {
+	width: 1024px;
+	margin:0 auto;
+	background: #eee;
+	padding: 10px 15px;
+}
+
+footer {
+	text-align: center;
+	padding-top: 10px;
+	font-size: .8em;
+}
+
+.error {
+	border: 1px solid #f00;
+	padding: 4px 8px;
+	margin: 0 5%;
+	background: #f3cece;
+}
+
+.warning {
+	color: #f00;
+}
+
+.container {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.video {
+	width:49%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin: .5%;
+	box-sizing: border-box;
+	background: #fff;
+	position: relative;
+}
+
+.video .image {
+	float: left;
+	margin-right: 5px;
+	border-radius: 4px 0 0 4px;
+}
+
+.video .title {
+	display: block;
+	margin-top: 5px;
+	font-weight: bold;
+	color: #3490dc;
+	padding-right: 10px;
+	text-decoration: none;
+}
+.video .title:hover {
+	text-decoration: underline;
+}
+
+.video .date {
+	display: block;
+	position: absolute;
+	right: 10px;
+	bottom: 5px;
+	font-size: .8em;
+}
+
+.mirror {
+	display: inline-block;
+	background: #ccc;
+	border: 1px solid #000;
+	padding: 4px;
+	margin: 4px;
+	cursor: pointer;
+}
