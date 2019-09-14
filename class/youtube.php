@@ -78,9 +78,7 @@ class youtube
 		{
 			return;
 		}
-		
-		print_r($youtube_info);die;
-		
+
 		// More than one page?
 		$next = isset($youtube_info['nextPageToken']) ? $youtube_info['nextPageToken'] : '';
 		
