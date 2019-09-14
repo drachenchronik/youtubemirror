@@ -44,7 +44,7 @@ class youtube
 		}
 		
 		// Get channel info
-		$url = 'https://www.googleapis.com/youtube/v3/channels?part=snippet,contentDetails&id=' . $channel_id . '&key=' . YOUTUBE_API_KEY;
+		$url = 'https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=' . $channel_id . '&key=' . YOUTUBE_API_KEY;
 		
 		// Check if URL is valide
 		$headers = get_headers($url, 1);
@@ -63,7 +63,7 @@ class youtube
 
 		// Get videos from playlist
 		$addon = !empty($page_token) ? '&pageToken=' . $page_token : '';
-		$url = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails,status&playlistId=' . $playlist_id . '&maxResults=50&key=' . YOUTUBE_API_KEY . $addon;
+		$url = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails&playlistId=' . $playlist_id . '&maxResults=50&key=' . YOUTUBE_API_KEY . $addon;
 		
 		// Check if URL is valide
 		$headers = get_headers($url, 1);
@@ -78,6 +78,8 @@ class youtube
 		{
 			return;
 		}
+		
+		print_r($youtube_info);die;
 		
 		// More than one page?
 		$next = isset($youtube_info['nextPageToken']) ? $youtube_info['nextPageToken'] : '';
