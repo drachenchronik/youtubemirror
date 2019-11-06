@@ -9,3 +9,7 @@ Ladt Drachenlord Videos automatisch von Youtube runter
 3. Passe die config.php an
 4. Rufe {DEINE_DOMAIN}/install.php im Webbrowser auf
 5. Richte einen Conjob ein der {DEINE_DOMAIN}/cron.php regelmäsig aufruft
+
+
+#Drachenlord Video Archive
+https://www.dailymotion.com/drachenchronik
